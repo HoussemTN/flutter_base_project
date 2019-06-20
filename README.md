@@ -1,17 +1,25 @@
 # base_project
+A quick start for flutter applications.
+## Widgets
+- TabBar
+- Drawer
+- Float Action Button
+## Features
+- Splash Screen (Custom)
 
-A quick start for flutter applications
+## Screenshots
 
-## Getting Started
+### Splash
+ 
+<img src="https://github.com/HoussemTN/flutter_base_project/blob/master/images/splash.PNG?raw=true"/>
+ 
+### HomePage
 
-This project is a starting point for a Flutter application.
+  <img src="https://github.com/HoussemTN/flutter_base_project/blob/master/images/Home.PNG?raw=true"/>
+  
+### Drawer
 
-A few resources to get you started if this is your first Flutter project:
+   <img  alt="Drawer" src="https://github.com/HoussemTN/flutter_base_project/blob/master/images/drawer.PNG?raw=true"/>
+    
+   
 
-- [Lab: Write your first Flutter app](https://flutter.io/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.io/docs/cookbook)
-
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.io/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
-"# flutter_base_project" 

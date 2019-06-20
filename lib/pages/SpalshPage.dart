@@ -1,7 +1,6 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 
-
 class SplashPage extends StatefulWidget {
   @override
   createState() => _SplashPageState();
@@ -11,16 +10,12 @@ class _SplashPageState extends State<SplashPage> {
   @override
   void initState() {
     super.initState();
-    Timer(
-        Duration(seconds: 5),
-            () => Navigator.pushReplacementNamed(context,"TabsRoute" ));
-
+    Timer(Duration(seconds: 5),
+        () => Navigator.pushReplacementNamed(context, "TabsRoute"));
   }
 
   @override
   void dispose() {
-
-
     super.dispose();
   }
 

@@ -9,6 +9,8 @@ class TabsPage extends StatefulWidget {
 }
 
 class _TabsState extends State<TabsPage> {
+  int energy = 10;
+
   @override
   Widget build(BuildContext context) {
     ErrorWidget.builder = getErrorWidget;
@@ -27,6 +29,59 @@ class _TabsState extends State<TabsPage> {
                 Tab(icon: Icon(Icons.my_location), text: 'Tab 1'),
                 Tab(icon: Icon(Icons.cloud), text: 'Tab 2'),
               ]),
+              actions: <Widget>[
+                Padding(
+                  padding: const EdgeInsets.all(2.0),
+                  child: Container(
+                    decoration: new BoxDecoration(
+                        color: Colors.indigoAccent,
+                        borderRadius: new BorderRadius.all(
+                          const Radius.circular(40.0),
+                        )),
+                    child: Row(
+                      children: <Widget>[
+                        Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Icon(Icons.flash_on, size: 24),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.only(
+                              top: 18.0, bottom: 18.0, right: 10.0),
+                          child: Text(
+                            "$energy",
+                            style: TextStyle(
+                              fontSize: 16.0,
+                            ),
+                          ),
+                        ),
+                        Container(
+                          height: 40,
+                          width: 40,
+                          child: Padding(
+                            padding: const EdgeInsets.only(right: 8.0),
+                            child: CircleAvatar(
+                              foregroundColor: Colors.red,
+                              backgroundColor: Colors.red,
+                              child: IconButton(
+                                iconSize: 17,
+                                icon: Icon(
+                                  Icons.add,
+                                  color: Colors.white,
+                                ),
+                                onPressed: () {
+                                  setState(() {
+                                    energy++;
+                                  });
+                                },
+                              ),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ],
             ),
             drawer: DrawerWidget(),
             body: TabBarView(

@@ -42,7 +42,11 @@ class _TabsState extends State<TabsPage> {
                       children: <Widget>[
                         Padding(
                           padding: const EdgeInsets.all(8.0),
-                          child: Icon(Icons.flash_on, size: 24),
+                          child: Icon(
+                            Icons.flash_on,
+                            size: 24,
+                            color: Colors.orange,
+                          ),
                         ),
                         Padding(
                           padding: const EdgeInsets.only(
@@ -58,7 +62,7 @@ class _TabsState extends State<TabsPage> {
                           height: 40,
                           width: 40,
                           child: Padding(
-                            padding: const EdgeInsets.only(right: 8.0),
+                            padding: const EdgeInsets.only(right: 6.0),
                             child: CircleAvatar(
                               foregroundColor: Colors.red,
                               backgroundColor: Colors.red,

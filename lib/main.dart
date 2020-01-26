@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:base_project/pages/TabsPage.dart';
-import 'package:base_project/pages/SpalshPage.dart';
+import 'package:base_project/pages/SplashPage.dart';
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
